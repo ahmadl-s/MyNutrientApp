@@ -62,7 +62,7 @@ class AnalysisWindowController():
     sb.append(s"${"%.2f".format(MainApp.totalFiber)}g of fiber, and ")
     sb.append(s"${"%.2f".format(MainApp.totalSugar)}g of sugar.\n\n")
 
-    // --- Calories Review ---
+    //Calories Review
     if (MainApp.totalCalories < 300) {
       sb.append("This is a very light combination. It might not be sufficient for a full meal.")
     } else if (MainApp.totalCalories < 500) {
@@ -75,7 +75,7 @@ class AnalysisWindowController():
       sb.append("The calorie count for this combination seems moderate and balanced.")
     }
 
-    // --- Protein Review ---
+    //Protein Review
     if (MainApp.totalProtein > 50) {
       sb.append("\nExcellent protein intake, great for muscle support and satiety!")
     } else if (MainApp.totalProtein > 30) {
@@ -86,7 +86,7 @@ class AnalysisWindowController():
       sb.append("\nConsider adding more protein sources to your meal to feel fuller for longer.")
     }
 
-    // --- Carbohydrates Review ---
+    //Carbohydrates Review
     if (MainApp.totalCarbohydrates > 100) {
       sb.append("\nThis is a high-carbohydrate meal, providing a quick source of energy.")
     } else if (MainApp.totalCarbohydrates > 50) {
@@ -95,7 +95,7 @@ class AnalysisWindowController():
       sb.append("\nThis combination is low in carbohydrates. Ensure you have enough energy for your activities.")
     }
 
-    // --- Fat Review ---
+    //Fat Review
     if (MainApp.totalFat > 40) {
       sb.append("\nThis combination is quite high in fat. Opt for healthy fats where possible.")
     } else if (MainApp.totalFat > 20) {
@@ -104,7 +104,7 @@ class AnalysisWindowController():
       sb.append("\nThe fat content is low. Healthy fats are important for a balanced diet.")
     }
 
-    // --- Fiber Review ---
+    //Fiber Review
     if (MainApp.totalFiber > 10) {
       sb.append("\nExcellent fiber intake! This is great for digestive health and blood sugar control.")
     } else if (MainApp.totalFiber > 5) {
@@ -113,7 +113,7 @@ class AnalysisWindowController():
       sb.append("\nTry to include more fiber-rich foods like vegetables, fruits, and whole grains.")
     }
 
-    // --- Sugar Review ---
+    //Sugar Review
     if (MainApp.totalSugar > 30) {
       sb.append("\nThis combination is high in sugar. Moderation is advised to maintain a healthy diet.")
     } else if (MainApp.totalSugar > 15) {

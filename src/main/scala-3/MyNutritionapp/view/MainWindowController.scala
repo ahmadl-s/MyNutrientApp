@@ -33,7 +33,6 @@ class MainWindowController():
 
   def initialize(): Unit =
     foodTableView.items = MainApp.foodData
-    // initialize columns's cell values
     foodNameColumn.cellValueFactory = _.value.name
 
       showFoodDetails(None)
@@ -44,7 +43,6 @@ class MainWindowController():
   private def showFoodDetails(person: Option[FoodItem]): Unit = {
     person match
       case Some(person) =>
-        // Fill the labels with info from the Person object.
         nameLabel.text <== person.name
         caloriesLabel.text = person.calories.value.toString
         proteinLabel.text = person.protein.value.toString
@@ -54,7 +52,6 @@ class MainWindowController():
         sugarLabel.text = person.sugar.value.toString
 
       case None =>
-        // Person is null, remove all the text.
         nameLabel.text = ""
         caloriesLabel.text = ""
         proteinLabel.text = ""

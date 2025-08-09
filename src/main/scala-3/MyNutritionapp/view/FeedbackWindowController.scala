@@ -23,13 +23,11 @@ class FeedbackWindowController():
 
   @FXML
   def handleSubmitFeedback(event: ActionEvent): Unit = {
-    // Get the text from the TextArea
     val userFeedback = feedbackTextArea.text.value
 
     if (userFeedback.trim.nonEmpty) {
       val alert = new Alert(AlertType.Information) {
         title = "Feedback Submitted"
-        //        headerText = null
         contentText = s"Thank you for your feedback:\n\n$userFeedback"
       }
 
@@ -37,10 +35,8 @@ class FeedbackWindowController():
 
       feedbackTextArea.text = ""
     } else {
-      // Create a warning alert if the user tries to submit empty feedback
       val alert = new Alert(AlertType.Warning) {
         title = "No Feedback Entered"
-        //        headerText = null
         contentText = "Please enter your feedback before submitting."
       }
       alert.showAndWait()

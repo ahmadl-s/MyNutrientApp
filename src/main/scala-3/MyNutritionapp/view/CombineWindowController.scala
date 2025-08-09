@@ -1,13 +1,11 @@
 package MyNutritionapp.view
 
 import MyNutritionapp.MainApp
-import MyNutritionapp.MainApp.{showAnalysisWindow, stage}
 import MyNutritionapp.model
 import MyNutritionapp.model.FoodItem
 import javafx.event.ActionEvent
 import javafx.fxml.FXML
 import javafx.scene.control.{Label, TableColumn, TableView}
-import scalafx.stage.Stage
 import scalafx.Includes.*
 import javafx.scene.control.SelectionMode
 
@@ -45,38 +43,6 @@ class CombineWindowController():
     foodTableView.selectionModel().selectionMode = SelectionMode.MULTIPLE
 
 
-
-//  def sumSelectedCalories(): Double = {
-//    // Get the list of selected Food items from the table
-//    val selectedFoods = foodTableView.selectionModel().getSelectedItems
-//    selectedFoods.toSeq.map(_.calories.value).sum
-//  }
-//
-//  def sumSelectedProtein(): Double = {
-//    val selectedFoods = foodTableView.selectionModel().getSelectedItems
-//    selectedFoods.toSeq.map(_.protein.value).sum
-//  }
-//
-//  def sumSelectedCarbohydrates(): Double = {
-//    val selectedFoods = foodTableView.selectionModel().getSelectedItems
-//    selectedFoods.toSeq.map(_.carbohydrates.value).sum
-//  }
-//
-//  def sumSelectedFat(): Double = {
-//    val selectedFoods = foodTableView.selectionModel().getSelectedItems
-//    selectedFoods.toSeq.map(_.fat.value).sum
-//  }
-//
-//  def sumSelectedFiber(): Double = {
-//    val selectedFoods = foodTableView.selectionModel().getSelectedItems
-//    selectedFoods.toSeq.map(_.fiber.value).sum
-//  }
-//
-//  def sumSelectedSugar(): Double = {
-//    val selectedFoods = foodTableView.selectionModel().getSelectedItems
-//    selectedFoods.toSeq.map(_.sugar.value).sum
-//
-
   def sumSelectedAttribute(attributeExtractor: FoodItem => Double): Double = {
     val selectedFoods = foodTableView.selectionModel().getSelectedItems
     selectedFoods.toSeq.map(attributeExtractor).sum
@@ -84,7 +50,6 @@ class CombineWindowController():
 
   @FXML
   def handleCalculate(): Unit = {
-    //     val total = sumSelectedCalories()
 
     MainApp.totalCalories = sumSelectedAttribute(_.calories.value)
     MainApp.totalProtein = sumSelectedAttribute(_.protein.value)
@@ -100,7 +65,7 @@ class CombineWindowController():
     totalFiberLabel.text = f"Total Fiber: ${MainApp.totalFiber}%.2f"
     totalSugarLabel.text = f"Total Sugar: ${MainApp.totalSugar}%.2f"
   }
-  
+
 
   @FXML
   def handleAnalysis(action: ActionEvent): Unit = {

@@ -24,7 +24,7 @@ object MainApp extends JFXApp3:
 
   val foodData = new ObservableBuffer[FoodItem]()
 
-
+//Table info
   foodData += new Grain("White Rice", 130, 2.7, 28, 0.3, 0.4, 0.1)
   foodData += new Grain("Brown Rice", 123, 2.7, 25.6, 1.0, 1.6, 0.2)
   foodData += new Grain("Oats", 389, 16.9, 66.3, 6.9, 10.6, 0.0)
@@ -69,8 +69,8 @@ object MainApp extends JFXApp3:
   foodData += new Vegetable("Onion", 40, 1.1, 9.3, 0.1, 1.7, 4.2)
   foodData += new Vegetable("Kale", 49, 4.3, 8.8, 0.9, 3.6, 1.3)
 
-  // Combine all into a single list of FoodItem
 
+  //TotalNutrient calculation info
   var totalCalories: Double = 0.0
   var totalProtein: Double = 0.0
   var totalCarbohydrates: Double = 0.0
