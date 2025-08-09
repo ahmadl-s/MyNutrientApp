@@ -37,7 +37,7 @@
                <children>
                   <Button layoutX="494.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="37.0" prefWidth="89.0" text="Back" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
                   <Label layoutX="29.0" layoutY="14.0" styleClass="label-title" text="Nutrient Review (Drag Down)" />
-                  <Label fx:id="AnalysisLabel" alignment="TOP_LEFT" layoutX="21.0" layoutY="55.0" prefHeight="202.0" prefWidth="551.0" text="Label" wrapText="true" />
+                  <Label fx:id="AnalysisLabel" layoutX="29.0" layoutY="56.0" text="Label" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
                </children>
             </AnchorPane>
         </items>
