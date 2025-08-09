@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" styleClass="anchor" stylesheets="@../../application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyNutritionapp.view.OpeningWindowController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" stylesheets="@../../application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyNutritionapp.view.OpeningWindowController">
    <children>
       <Button layoutX="250.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleStart" prefHeight="59.0" prefWidth="126.0" text="Start" />
       <Label layoutX="109.0" layoutY="65.0" prefHeight="78.0" prefWidth="407.0" styleClass="label-title" text="WELCOME TO MY NUTRITION APP" />
