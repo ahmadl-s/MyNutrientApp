@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="521.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyNutritionapp.view.FeedbackWindowController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" stylesheets="@../../application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyNutritionapp.view.FeedbackWindowController">
    <children>
-      <Button layoutX="443.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleHome" prefHeight="26.0" prefWidth="54.0" text="Home" />
-      <TextArea fx:id="feedbackTextArea" layoutX="31.0" layoutY="68.0" prefHeight="134.0" prefWidth="450.0" />
+      <Button layoutX="481.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleHome" prefHeight="39.0" prefWidth="94.0" text="Home" />
+      <TextArea fx:id="feedbackTextArea" layoutX="31.0" layoutY="68.0" prefHeight="163.0" prefWidth="537.0" />
       <Label layoutX="31.0" layoutY="42.0" prefHeight="26.0" prefWidth="63.0" text="FeedBack:" />
-      <Button fx:id="submitButton" layoutX="369.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleSubmitFeedback" prefHeight="26.0" prefWidth="117.0" text="Submit Feedback" />
+      <Button fx:id="submitButton" layoutX="384.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleSubmitFeedback" prefHeight="26.0" prefWidth="194.0" text="Submit Feedback" />
    </children>
 </AnchorPane>
