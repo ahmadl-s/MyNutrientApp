@@ -18,6 +18,8 @@
                      </accelerator>
                   </MenuItem>
                   <MenuItem mnemonicParsing="false" onAction="#handleHome" text="Go Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleViewFoodPage" text="View Food Page" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleCombineFoodPage" text="Combine Food Page" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="_Edit">

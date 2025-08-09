@@ -22,6 +22,14 @@ class RootLayoutController():
   def handleFeedbackWindow(action: ActionEvent): Unit =
     MainApp.showFeedbackWindow()
 
+  @FXML
+  def handleViewFoodPage(action: ActionEvent): Unit =
+    MainApp.showMainWindow()
+
+  @FXML
+  def handleCombineFoodPage(action: ActionEvent): Unit =
+    MainApp.showCombineWindow()
+
 
 
 

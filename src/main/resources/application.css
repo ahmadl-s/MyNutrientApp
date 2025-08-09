@@ -1,11 +1,10 @@
-/* --- Global & General Styles --- */
 .root {
     -fx-font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     -fx-background-color: #D3D3D3; /* A light gray background for the main stage */
 }
 
 
-/* Style for the content areas of your windows */
+
 .content-pane {
     -fx-background-color: #e8eaf6;
 }
@@ -15,14 +14,13 @@
     -fx-font-size: 14px;
 }
 
-/* Specific styling for titles and headings */
+
 .label-title {
     -fx-font-size: 24px;
     -fx-font-weight: bold;
     -fx-text-fill: #4a4a4a;
 }
 
-/* --- Button Styles --- */
 .button {
     -fx-background-color: #4CAF50;
     -fx-text-fill: white;
@@ -41,7 +39,7 @@
     -fx-background-color: #388e3c;
 }
 
-/* --- TableView Styles --- */
+
 .table-view {
     -fx-background-color: #ffffff;
     -fx-border-color: #cccccc;
@@ -62,7 +60,7 @@
     -fx-background-color: #b3e5fc;
 }
 
-/* --- SplitPane & BorderPane Styles --- */
+
 .split-pane {
     -fx-background-color: transparent;
 }
@@ -75,7 +73,7 @@
     -fx-background-color: transparent;
 }
 
-/* --- MenuBar and MenuItem Styles --- */
+
 .menu-bar {
     -fx-background-color: #4a4a4a;
 }
@@ -88,9 +86,9 @@
     -fx-background-color: #555555;
 }
 
-/* Updated menu item styling */
+
 .menu-item {
-    -fx-padding: 5px 15px; /* Adds padding for better spacing */
+    -fx-padding: 5px 15px;
 }
 
 .menu-item .label {
@@ -99,14 +97,14 @@
 }
 
 .menu-item:hover .label {
-    -fx-text-fill: #1a1a1a; /* Darken the text color on hover */
+    -fx-text-fill: #1a1a1a;
 }
 
 .menu-item:hover {
-    -fx-background-color: #e0e0e0; /* A lighter gray hover effect */
+    -fx-background-color: #e0e0e0;
 }
 
-/* --- TextArea Styles --- */
+
 .text-area {
     -fx-background-color: #ffffff;
     -fx-background-radius: 5px;
@@ -114,7 +112,6 @@
     -fx-border-radius: 5px;
 }
 
-/* --- Specific Label for Nutrient Review in Analysis Window --- */
 #AnalysisLabel {
     -fx-background-color: #ffffff;
     -fx-padding: 15px;
@@ -123,7 +120,7 @@
     -fx-border-radius: 5px;
 }
 
-/* --- A small, gray label for a subtle look --- */
+
 .label-subtitle {
     -fx-text-fill: #888888;
     -fx-font-size: 12px;

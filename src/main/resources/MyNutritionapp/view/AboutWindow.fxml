@@ -6,7 +6,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="283.0" stylesheets="@../../application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyNutritionapp.view.AboutWindowController">
    <children>
-      <Label layoutX="35.0" layoutY="80.0" text="This is about showing you nutrition" />
+      <Label layoutX="28.0" layoutY="61.0" prefHeight="120.0" prefWidth="232.0" text="This app helps achieve United Nations Goal 2 " wrapText="true" />
       <Button layoutX="106.0" layoutY="204.0" mnemonicParsing="false" onAction="#handleClose" text="Close" />
    </children>
 </AnchorPane>
