@@ -19,7 +19,7 @@
                <children>
                   <TableView fx:id="foodTableView" layoutX="14.0" layoutY="14.0" prefHeight="334.0" prefWidth="152.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn fx:id="foodNameColumn" prefWidth="148.7999878525734" text="C1" />
+                      <TableColumn fx:id="foodNameColumn" prefWidth="148.7999878525734" text="Food Name" />
                     </columns>
                   </TableView>
                </children>
@@ -73,6 +73,7 @@
                                                       <Insets left="50.0" />
                                                    </GridPane.margin>
                                                 </Button>
+                                                <Label text="Use CTRL to choose multiple Food" />
                                              </children>
                                           </GridPane>
                                        </children>
