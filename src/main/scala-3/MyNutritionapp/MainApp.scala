@@ -1,6 +1,5 @@
 package MyNutritionapp
 
-
 import MyNutritionapp.view.{AboutWindowController, CombineWindowController, FeedbackWindowController, InstructionsWindowController}
 import javafx.fxml.FXMLLoader
 import scalafx.stage.Stage

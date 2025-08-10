@@ -19,6 +19,7 @@ abstract class FoodItem(
   val fat: ObjectProperty[Double] = ObjectProperty[Double](_fat)
   val fiber: ObjectProperty[Double] = ObjectProperty[Double](_fiber)
   val sugar: ObjectProperty[Double] = ObjectProperty[Double](_sugar)
+
   def getFoodType(): String
-  
+
 }
