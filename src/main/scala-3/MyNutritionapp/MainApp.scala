@@ -14,9 +14,6 @@ import scalafx.collections.ObservableBuffer
 import scalafx.stage.Modality.ApplicationModal
 
 
-
-
-
 object MainApp extends JFXApp3:
 
   var rootPane: Option[javafx.scene.layout.BorderPane] = None
@@ -159,17 +156,3 @@ object MainApp extends JFXApp3:
     InstructionWindowStage.showAndWait()
     ctrl.okCliked
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
