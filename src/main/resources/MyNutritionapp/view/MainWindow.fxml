@@ -38,12 +38,13 @@
                       <RowConstraints maxHeight="55.59998779296875" minHeight="10.0" prefHeight="28.200013732910165" vgrow="SOMETIMES" />
                       <RowConstraints maxHeight="51.600012207031256" minHeight="8.400000000000006" prefHeight="34.39999389648439" vgrow="SOMETIMES" />
                       <RowConstraints maxHeight="52.800006103515614" minHeight="3.0" prefHeight="37.599999999999994" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="60.59998168945313" minHeight="3.0" prefHeight="42.99999389648437" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="55.79999389648435" minHeight="2.199993896484358" prefHeight="37.199984741210926" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="47.600003051757824" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.59998168945313" minHeight="3.0" prefHeight="33.19999999999999" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="55.79999389648435" minHeight="2.199993896484358" prefHeight="26.80000000000001" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="47.600003051757824" minHeight="0.0" prefHeight="27.399993896484375" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="66.80002441406248" minHeight="3.799984741210949" prefHeight="30.59998779296876" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="66.80002441406248" minHeight="10.0" prefHeight="30.59998779296876" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="66.80002441406248" minHeight="10.0" prefHeight="30.59998779296876" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="66.80002441406248" minHeight="10.0" prefHeight="34.99996337890627" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="66.80002441406248" minHeight="10.0" prefHeight="34.99996337890627" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="66.80002441406248" minHeight="6.999987792968739" prefHeight="7.800036621093739" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="55.60001220703123" minHeight="10.0" prefHeight="45.80001220703127" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
@@ -61,13 +62,15 @@
                         <Label fx:id="fatLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="6" />
                         <Label fx:id="fiberLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="7" />
                         <Label fx:id="sugarLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#handleCombineWindow" text="Combine" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                        <Button mnemonicParsing="false" onAction="#handleCombineWindow" text="Combine" GridPane.columnIndex="2" GridPane.rowIndex="12">
                            <GridPane.margin>
                               <Insets left="30.0" />
                            </GridPane.margin>
                         </Button>
                         <Label prefHeight="30.0" prefWidth="227.0" styleClass="label-title" text="FOOD DETAILS" GridPane.columnSpan="2" GridPane.rowIndex="1" />
                         <Button mnemonicParsing="false" onAction="#handleInstructionWindow" prefHeight="39.0" prefWidth="128.0" text="Instructions" GridPane.columnIndex="2" />
+                        <Label text="Type: " GridPane.rowIndex="9" />
+                        <Label fx:id="foodTypeLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="9" />
                      </children>
                   </GridPane>
                </children>

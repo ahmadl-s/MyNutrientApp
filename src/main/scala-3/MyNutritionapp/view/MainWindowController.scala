@@ -28,7 +28,9 @@ class MainWindowController():
   private var fiberLabel: Label = null
   @FXML
   private var sugarLabel: Label = null
-
+  @FXML
+  private var foodTypeLabel: Label = _
+  
   
 
   def initialize(): Unit =
@@ -40,16 +42,17 @@ class MainWindowController():
       (_, _, newValue) => showFoodDetails(Option(newValue))
   )
 
-  private def showFoodDetails(person: Option[FoodItem]): Unit = {
-    person match
-      case Some(person) =>
-        nameLabel.text <== person.name
-        caloriesLabel.text = person.calories.value.toString
-        proteinLabel.text = person.protein.value.toString
-        carbohydratesLabel.text = person.carbohydrates.value.toString
-        fatLabel.text = person.fat.value.toString
-        fiberLabel.text = person.fiber.value.toString
-        sugarLabel.text = person.sugar.value.toString
+  private def showFoodDetails(food: Option[FoodItem]): Unit = {
+    food match
+      case Some(food) =>
+        nameLabel.text <== food.name
+        caloriesLabel.text = food.calories.value.toString
+        proteinLabel.text = food.protein.value.toString
+        carbohydratesLabel.text = food.carbohydrates.value.toString
+        fatLabel.text = food.fat.value.toString
+        fiberLabel.text = food.fiber.value.toString
+        sugarLabel.text = food.sugar.value.toString
+        foodTypeLabel.text = food.getFoodType()
 
       case None =>
         nameLabel.text = ""
@@ -59,6 +62,7 @@ class MainWindowController():
         fatLabel.text = ""
         fiberLabel.text = ""
         sugarLabel.text = ""
+        foodTypeLabel.text = ""
 
   }
 
