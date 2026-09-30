@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
@@ -9,73 +8,75 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" stylesheets="@../../application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyNutritionapp.view.MainWindowController">
-   <children>
-      <SplitPane dividerPositions="0.35849056603773577" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <TableView fx:id="foodTableView" layoutX="-25.0" layoutY="58.0" prefHeight="398.4" prefWidth="175.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <columns>
-                      <TableColumn fx:id="foodNameColumn" prefWidth="171.999966442585" text="Food Name " />
-                    </columns>
-                  </TableView>
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="406.0">
-               <children>
-                  <GridPane layoutX="7.0" layoutY="5.0" prefHeight="358.0" prefWidth="382.0" styleClass="grid-pane" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.40001220703124" minWidth="10.0" prefWidth="92.00004882812499" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.79998779296875" minWidth="10.0" prefWidth="129.199951171875" />
-                    </columnConstraints>
-                    <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="32.19998626708985" minHeight="10.0" prefHeight="32.19998626708985" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="55.59998779296875" minHeight="10.0" prefHeight="28.200013732910165" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="51.600012207031256" minHeight="8.400000000000006" prefHeight="34.39999389648439" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="52.800006103515614" minHeight="3.0" prefHeight="37.599999999999994" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="60.59998168945313" minHeight="3.0" prefHeight="33.19999999999999" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="55.79999389648435" minHeight="2.199993896484358" prefHeight="26.80000000000001" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="47.600003051757824" minHeight="0.0" prefHeight="27.399993896484375" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="66.80002441406248" minHeight="3.799984741210949" prefHeight="30.59998779296876" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="66.80002441406248" minHeight="10.0" prefHeight="34.99996337890627" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="66.80002441406248" minHeight="10.0" prefHeight="34.99996337890627" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="66.80002441406248" minHeight="6.999987792968739" prefHeight="7.800036621093739" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="55.60001220703123" minHeight="10.0" prefHeight="45.80001220703127" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <Label text="Name" GridPane.rowIndex="2" />
-                        <Label text="Calories" GridPane.rowIndex="3" />
-                        <Label text="Protein" GridPane.rowIndex="4" />
-                        <Label text="Carbohydrates" GridPane.rowIndex="5" />
-                        <Label text="Fat" GridPane.rowIndex="6" />
-                        <Label text="Fiber" GridPane.rowIndex="7" />
-                        <Label text="Sugar" GridPane.rowIndex="8" />
-                        <Label fx:id="nameLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="caloriesLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="proteinLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label fx:id="carbohydratesLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                        <Label fx:id="fatLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                        <Label fx:id="fiberLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                        <Label fx:id="sugarLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#handleCombineWindow" text="Combine" GridPane.columnIndex="2" GridPane.rowIndex="12">
-                           <GridPane.margin>
-                              <Insets left="30.0" />
-                           </GridPane.margin>
-                        </Button>
-                        <Label prefHeight="30.0" prefWidth="227.0" styleClass="label-title" text="FOOD DETAILS" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#handleInstructionWindow" prefHeight="39.0" prefWidth="128.0" text="Instructions" GridPane.columnIndex="2" />
-                        <Label text="Type: " GridPane.rowIndex="9" />
-                        <Label fx:id="foodTypeLabel" text="..." GridPane.columnIndex="1" GridPane.rowIndex="9" />
-                     </children>
-                  </GridPane>
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
-   </children>
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" styleClass="main-window" stylesheets="@../../application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyNutritionapp.view.MainWindowController">
+    <children>
+        <SplitPane dividerPositions="0.32" prefHeight="400.0" prefWidth="600.0" styleClass="main-split-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="sidebar-pane">
+                    <children>
+                        <VBox spacing="12.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+                            <children>
+                                <Label styleClass="section-kicker" text="FOOD LIBRARY" />
+                                <Label styleClass="page-title" text="Browse the database" wrapText="true" />
+                                <Label styleClass="section-subtitle" text="Select a food item to inspect its nutrition profile." wrapText="true" />
+                                <TableView fx:id="foodTableView" styleClass="food-table" VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn fx:id="foodNameColumn" prefWidth="220.0" text="Food Name" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="406.0" styleClass="details-pane">
+                    <children>
+                        <VBox spacing="16.0" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="16.0">
+                            <children>
+                                <VBox spacing="4.0">
+                                    <children>
+                                        <Label styleClass="section-kicker" text="NUTRITION SNAPSHOT" />
+                                        <Label styleClass="page-title" text="Food Details" />
+                                        <Label styleClass="section-subtitle" text="Detailed information for the selected item." wrapText="true" />
+                                    </children>
+                                </VBox>
+                                <GridPane hgap="14.0" styleClass="details-card" vgap="12.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints minWidth="110.0" prefWidth="130.0" />
+                                        <ColumnConstraints hgrow="ALWAYS" minWidth="140.0" prefWidth="200.0" />
+                                    </columnConstraints>
+                                    <children>
+                                        <Label styleClass="detail-label" text="Name" />
+                                        <Label fx:id="nameLabel" styleClass="detail-value detail-value-highlight" text="—" GridPane.columnIndex="1" />
+                                        <Label styleClass="detail-label" text="Calories" GridPane.rowIndex="1" />
+                                        <Label fx:id="caloriesLabel" styleClass="detail-value" text="—" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Label styleClass="detail-label" text="Protein" GridPane.rowIndex="2" />
+                                        <Label fx:id="proteinLabel" styleClass="detail-value" text="—" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <Label styleClass="detail-label" text="Carbohydrates" GridPane.rowIndex="3" />
+                                        <Label fx:id="carbohydratesLabel" styleClass="detail-value" text="—" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                        <Label styleClass="detail-label" text="Fat" GridPane.rowIndex="4" />
+                                        <Label fx:id="fatLabel" styleClass="detail-value" text="—" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                        <Label styleClass="detail-label" text="Fiber" GridPane.rowIndex="5" />
+                                        <Label fx:id="fiberLabel" styleClass="detail-value" text="—" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                        <Label styleClass="detail-label" text="Sugar" GridPane.rowIndex="6" />
+                                        <Label fx:id="sugarLabel" styleClass="detail-value" text="—" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                        <Label styleClass="detail-label" text="Type" GridPane.rowIndex="7" />
+                                        <Label fx:id="foodTypeLabel" styleClass="detail-value" text="—" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    </children>
+                                </GridPane>
+                                <HBox alignment="CENTER_RIGHT" spacing="12.0">
+                                    <children>
+                                        <Button mnemonicParsing="false" onAction="#handleInstructionWindow" styleClass="btn-secondary" text="Instructions" />
+                                        <Button mnemonicParsing="false" onAction="#handleCombineWindow" styleClass="btn-primary" text="Combine" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
 </AnchorPane>

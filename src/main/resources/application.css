@@ -1,81 +1,194 @@
 .root {
-    -fx-font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    -fx-background-color: #D3D3D3; /* A light gray background for the main stage */
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-background-color: linear-gradient(to bottom right, #f7f9fc, #ebf2f8);
+    -fx-text-fill: #1f2937;
 }
 
-
-
 .content-pane {
-    -fx-background-color: #e8eaf6;
+    -fx-background-color: transparent;
 }
 
 .label {
-    -fx-text-fill: #333333;
+    -fx-text-fill: #263238;
     -fx-font-size: 14px;
 }
 
-
-.label-title {
+.label-title,
+.page-title {
     -fx-font-size: 24px;
     -fx-font-weight: bold;
-    -fx-text-fill: #4a4a4a;
+    -fx-text-fill: #102a43;
 }
 
-.button {
-    -fx-background-color: #4CAF50;
-    -fx-text-fill: white;
+.label-subtitle,
+.section-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #64748b;
+}
+
+.section-kicker {
+    -fx-font-size: 11px;
     -fx-font-weight: bold;
+    -fx-text-fill: #7b8794;
+}
+
+.main-window {
+    -fx-background-color: transparent;
+}
+
+.main-split-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 14;
+}
+
+.main-split-pane > .split-pane-divider {
+    -fx-background-color: transparent;
+    -fx-padding: 0 6 0 6;
+}
+
+.main-split-pane > .split-pane-divider .vertical-grabber {
+    -fx-background-color: #d7e1ec;
+    -fx-background-radius: 999;
+}
+
+.sidebar-pane,
+.details-pane {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #dbe4ef;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 23, 42, 0.08), 18, 0, 0, 6);
+}
+
+.sidebar-pane {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f8fbff);
+}
+
+.details-pane {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f9fbfd);
+}
+
+.grid-pane,
+.details-grid,
+.details-card {
+    -fx-background-color: rgba(255, 255, 255, 0.88);
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-border-color: #d7e1ec;
+    -fx-border-width: 1;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 23, 42, 0.06), 16, 0, 0, 4);
+}
+
+.detail-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #64748b;
+}
+
+.detail-value {
     -fx-font-size: 14px;
-    -fx-background-radius: 5px;
-    -fx-padding: 10px 20px;
-    -fx-cursor: hand;
-}
-
-.button:hover {
-    -fx-background-color: #43a047;
-}
-
-.button:pressed {
-    -fx-background-color: #388e3c;
-}
-
-
-.table-view {
-    -fx-background-color: #ffffff;
-    -fx-border-color: #cccccc;
-    -fx-border-radius: 5px;
-    -fx-table-cell-border-color: #e0e0e0;
-}
-
-.table-view .column-header-background {
-    -fx-background-color: #f0f0f0;
-}
-
-.table-view .column-header .label {
-    -fx-text-fill: #555555;
     -fx-font-weight: bold;
+    -fx-text-fill: #1f2937;
+}
+
+.detail-value-highlight {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+.table-view,
+.food-table {
+    -fx-background-color: transparent;
+    -fx-background-radius: 14;
+    -fx-border-color: #d7e1ec;
+    -fx-border-radius: 14;
+    -fx-padding: 0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .column-header-background,
+.food-table .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #edf3ff, #dde8f5);
+    -fx-background-insets: 0;
+    -fx-background-radius: 14 14 0 0;
+}
+
+.table-view .column-header,
+.table-view .filler,
+.food-table .column-header,
+.food-table .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #d7e1ec transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header .label,
+.food-table .column-header .label {
+    -fx-text-fill: #35506b;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-cell-size: 40px;
+    -fx-border-color: transparent transparent #edf2f7 transparent;
+}
+
+.table-row-cell:filled:hover {
+    -fx-background-color: #f6faff;
 }
 
 .table-row-cell:filled:selected {
-    -fx-background-color: #b3e5fc;
+    -fx-background-color: #dcecff;
+    -fx-text-fill: #123b66;
 }
 
+.button {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-font-weight: bold;
+    -fx-padding: 10 18 10 18;
+    -fx-cursor: hand;
+}
+
+.btn-primary {
+    -fx-background-color: linear-gradient(to bottom, #4f8ef7, #2563eb);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 99, 235, 0.25), 12, 0, 0, 4);
+}
+
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(to bottom, #5b99ff, #1d4ed8);
+}
+
+.btn-secondary {
+    -fx-background-color: white;
+    -fx-text-fill: #334155;
+    -fx-border-color: #d5deea;
+    -fx-border-width: 1;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #f7faff;
+    -fx-border-color: #b8c6d8;
+}
 
 .split-pane {
     -fx-background-color: transparent;
 }
 
 .split-pane-divider {
-    -fx-background-color: #cccccc;
+    -fx-background-color: #d7e1ec;
 }
 
 .border-pane {
     -fx-background-color: transparent;
 }
 
-
 .menu-bar {
-    -fx-background-color: #4a4a4a;
+    -fx-background-color: linear-gradient(to bottom, #34495e, #2c3e50);
 }
 
 .menu .label {
@@ -83,45 +196,37 @@
 }
 
 .menu:hover {
-    -fx-background-color: #555555;
+    -fx-background-color: rgba(255, 255, 255, 0.12);
 }
-
 
 .menu-item {
     -fx-padding: 5px 15px;
 }
 
 .menu-item .label {
-    -fx-text-fill: #333333;
+    -fx-text-fill: #334155;
     -fx-font-weight: normal;
 }
 
 .menu-item:hover .label {
-    -fx-text-fill: #1a1a1a;
+    -fx-text-fill: #0f172a;
 }
 
 .menu-item:hover {
-    -fx-background-color: #e0e0e0;
+    -fx-background-color: #e8eef8;
 }
 
-
 .text-area {
-    -fx-background-color: #ffffff;
-    -fx-background-radius: 5px;
-    -fx-border-color: #cccccc;
-    -fx-border-radius: 5px;
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: #d5deea;
+    -fx-border-radius: 12;
 }
 
 #AnalysisLabel {
-    -fx-background-color: #ffffff;
-    -fx-padding: 15px;
-    -fx-background-radius: 5px;
-    -fx-border-color: #cccccc;
-    -fx-border-radius: 5px;
-}
-
-
-.label-subtitle {
-    -fx-text-fill: #888888;
-    -fx-font-size: 12px;
+    -fx-background-color: white;
+    -fx-padding: 15;
+    -fx-background-radius: 12;
+    -fx-border-color: #d5deea;
+    -fx-border-radius: 12;
 }
